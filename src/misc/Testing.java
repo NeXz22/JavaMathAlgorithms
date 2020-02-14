@@ -61,5 +61,9 @@ public class Testing {
 		System.out.println(
 				format("Sorttype: BubbleSort, Collectiontype: List, Itemtype: String, Original: %s, Sorted: %s.",
 						strListSort, bubbleSort.sort(strListSort)));
+		
+		System.out.print("\n--- Misc ---\n");
+		
+		System.out.println(String.format("Fibonacci (n-th number): n: %d -> %d", 35, Fibonacci.f(1, 0, 0, 35)));
 	}
 }
