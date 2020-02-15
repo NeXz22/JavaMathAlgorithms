@@ -66,8 +66,10 @@ public class Testing {
 
 		Integer n = 35;
 		System.out.println(format("Fibonacci: f(%d): %d", n, Fibonacci.f(n)));
-		
-		String s = "Burggrub";
-		System.out.println(format("isPalindrome: isPalindrome(%s): %b", s, Palindrome.isPalindrome(s)));
+
+		System.out.println(format("isPalindrome: isPalindrome(%s, \"[\\\\s|.|,|;|'|\\\"]\"): %b", ".rac'e',car;",
+				Palindrome.isPalindrome(".rac'e',car;", "[\\s|.|,|;|'|\"]")));
+		System.out.println(format("isPalindrome: isPalindrome(%s, \"\"): %b", "racecar",
+				Palindrome.isPalindrome("racecar", "")));
 	}
 }
