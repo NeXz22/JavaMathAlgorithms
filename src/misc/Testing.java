@@ -64,7 +64,10 @@ public class Testing {
 
 		System.out.print("\n--- Misc ---\n");
 
-		Integer n = 3;
-		System.out.println(String.format("Fibonacci (n-th number): n: %d -> %d", n, Fibonacci.f(n)));
+		Integer n = 35;
+		System.out.println(format("Fibonacci: f(%d): %d", n, Fibonacci.f(n)));
+		
+		String s = "Burggrub";
+		System.out.println(format("isPalindrome: isPalindrome(%s): %b", s, Palindrome.isPalindrome(s)));
 	}
 }
