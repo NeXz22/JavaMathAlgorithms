@@ -25,6 +25,6 @@ public class Palindrome {
 	}
 
 	private static boolean isPalindrome(String s, int n, int m) {
-		return s.charAt(n) == s.charAt(m) ? n <= m ? isPalindrome(s, ++n, --m) : true : false;
+		return s.charAt(n) == s.charAt(m) && (n > m || isPalindrome(s, ++n, --m));
 	}
 }
